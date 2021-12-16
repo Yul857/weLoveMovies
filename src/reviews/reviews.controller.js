@@ -44,5 +44,4 @@ module.exports = {
   read: [asyncErrorBoundary(reviewExist), read],
   delete: [asyncErrorBoundary(reviewExist), asyncErrorBoundary(destroyReview)],
   update: [asyncErrorBoundary(reviewExist), asyncErrorBoundary(update)],
-  // list: [asyncErrorBoundary(reviewExist), asyncErrorBoundary(list)],
 };
